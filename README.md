@@ -49,7 +49,7 @@
 
 ###关于一些语法的变更
 
-1.activesupport concern的变更
+1. activesupport concern的变更
 	以前这样
 	```ruby
 	require 'active_support/concern'
