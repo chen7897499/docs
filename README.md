@@ -96,22 +96,22 @@ Test.bar
 ```
 
 ###一些其他的警告信息
+
 1. hz2py这个gem会报这种错误
-```
-/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "壟"
-/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "墊"
-/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "謔"
-/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "僥"
-/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "濫"
-/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "寧"
-/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "滾"
-/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:7: warning: duplicated key at line 7 ignored: "冲"
-``` 
-这个错误出现的原因是hash当中出现了重复的key
-解决方法是fork一下这个gem,然后在Gemfile当中这样指定
-```
-gem 'hz2py', '1.0.0', :git => 'https://github.com/chen7897499/hz2py.git'
-```
+	```
+	/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "壟"
+	/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "墊"
+	/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "謔"
+	/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "僥"
+	/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "濫"
+	/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "寧"
+	/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:5: warning: duplicated key at line 5 ignored: "滾"
+	/home/vagrant/.rvm/gems/ruby-2.2.3/bundler/gems/hz2py-801e632c02a9/lib/elvuel/traditional_and_simplified.rb:7: warning: duplicated key at line 7 ignored: "冲"
+	``` 
+	这个错误出现的原因是hash当中出现了重复的key,解决方法是fork一下这个gem,然后在Gemfile当中这样指定
+	```
+	gem 'hz2py', '1.0.0', :git => 'https://github.com/chen7897499/hz2py.git'
+	```
 
 2. 关于 warning: circular argument reference - now这种警告, 参考这里https://github.com/riseshia/neroscape/issues/9, 貌似升级rails版本就没事了
 
