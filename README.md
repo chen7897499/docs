@@ -34,11 +34,14 @@
 	    append_view_path Rails.root + "./lib/acts_as_task/app/views"
 	end
 	```
-3. 第三种情况就是这个插件不仅是插件还是gem,自带了gemspec,比如themes_for_rails这个插件,处理的办法是:
+3. 第三种情况就是这个插件不仅是插件还是gem,自带了gemspec,比如themes_for_rails这个插件,参考这里https://bibwild.wordpress.com/2012/04/25/converting-a-more-complex-rails-2-3-style-plugin-to-non-deprecated-under-rails-3-2/, 处理的办法是:   
+
 	```
-	git mv ./vendor/plugins/widget ./widget
-	```
-	然后在Gemfile当中
+	git mv ./vendor/plugins/themes_for_rails ./themes_for_rails
+	```   
+	
+	然后在Gemfile当中   
+	
 	```
 	gem "themes_for_rails", :path => './themes_for_rails'
 	```
