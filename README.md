@@ -50,61 +50,61 @@
 ###关于一些语法的变更
 
 1.activesupport concern的变更
-以前这样
-```ruby
-require 'active_support/concern'
-
-module Foo
-  extend ActiveSupport::Concern
-
-  module ClassMethods
-  	def bar
-  	  puts "class methods"
-  	end
-  end
-
-  module InstanceMethods
+	以前这样
+	```ruby
+	require 'active_support/concern'
+	
+	module Foo
+	  extend ActiveSupport::Concern
+	
+	  module ClassMethods
+	  	def bar
+	  	  puts "class methods"
+	  	end
+	  end
+	
+	  module InstanceMethods
+		  def baz
+		  	puts "instance methods"
+		  end
+		end
+	end
+	
+	class Test
+		include Foo
+	end
+	
+	Test.new.baz
+	
+	Test.bar
+	```
+	
+	现在这样
+	```ruby
+	require 'active_support/concern'
+	
+	module Foo
+	  extend ActiveSupport::Concern
+	
+	  module ClassMethods
+	  	def bar
+	  	  puts "class methods"
+	  	end
+	  end
+	
 	  def baz
 	  	puts "instance methods"
 	  end
 	end
-end
-
-class Test
-	include Foo
-end
-
-Test.new.baz
-
-Test.bar
-```
-
-现在这样
-```ruby
-require 'active_support/concern'
-
-module Foo
-  extend ActiveSupport::Concern
-
-  module ClassMethods
-  	def bar
-  	  puts "class methods"
-  	end
-  end
-
-  def baz
-  	puts "instance methods"
-  end
-end
-
-class Test
-	include Foo
-end
-
-Test.new.baz
-
-Test.bar
-```
+	
+	class Test
+		include Foo
+	end
+	
+	Test.new.baz
+	
+	Test.bar
+	```
 
 ###一些其他的警告信息
 
