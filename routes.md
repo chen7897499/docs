@@ -21,12 +21,12 @@ If you want to expose your action to GET, use `get` in the router:
 match "/users/:id" => "users#show", via: :get
 ```
 还可以多个http动词写在一起
-```
+```ruby
 match "/users" => "users#index", via: [:get, :post]
 ```
 
 还可以这样,这个是rails3.2和4都兼容的
-```
+```ruby
 get "/users" => "users#index"
 post "/users" => "users#index"
 ```
