@@ -124,6 +124,10 @@ search_post GET    /posts/:id/search(.:format) posts#search
 ```
 
 
-
+当然虽然前面说url不能有动词,但是在实际场景中还是有例外的,肯定是要允许额外的动词
+比如前面这种
+```
+search_posts GET    /posts/search(.:format)   posts#search
+```
 
 
