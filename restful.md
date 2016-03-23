@@ -130,4 +130,8 @@ search_post GET    /posts/:id/search(.:format) posts#search
 search_posts GET    /posts/search(.:format)   posts#search
 ```
 
+当然还是有其他的方法来避免的 比如这样子
+```
+/users?q={query}
+```
 
