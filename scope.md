@@ -35,3 +35,6 @@ end
 经测试rails 3.2可用
 
 详细请看http://api.rubyonrails.org/classes/ActiveRecord/Scoping/Named/ClassMethods.html#method-i-scope
+
+
+http://stackoverflow.com/questions/32745014/the-scope-body-needs-to-be-callable-rails-4
