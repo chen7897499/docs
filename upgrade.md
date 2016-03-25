@@ -130,7 +130,8 @@
 
 15. rails4当中没有instance_method_names这个方法了,改成这样instance_methods.map(&:to_s)
 
-16. 
+16. https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/relation/delegation.rb
+    https://github.com/rails/rails/blob/3-2-stable/activerecord/lib/active_record/relation/delegation.rb
   
 
 
