@@ -12,3 +12,6 @@ http://api.rubyonrails.org/classes/ActiveModel/Dirty.html
 原来activerecord会对每个attribute生成一个changed?方法,举个例子就是name字段就会生成name_changed?方法,record就会生成record_changed?方法,
 但是activerecord已经有这个方法了,所以会冲突
 https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/autosave_association.rb#L422
+
+扩展阅读
+https://github.com/bjones/safe_attributes
