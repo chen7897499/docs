@@ -15,3 +15,4 @@ https://github.com/rails/rails/blob/4-2-stable/activerecord/lib/active_record/au
 
 扩展阅读
 https://github.com/bjones/safe_attributes
+http://edgeapi.rubyonrails.org/classes/ActiveRecord/AttributeMethods/ClassMethods.html#method-i-instance_method_already_implemented-3F
